@@ -21,10 +21,15 @@ Nós usamos GitHub para controle de versão.
 ## ✒️ Autores
 
 Cristina Cozzetto
+
 Joyce Santos
+
 Leandro Camargo
+
 Alessandro Bonfilio
+
 Patricia Eveli
+
 Patrick Machado
 
 
