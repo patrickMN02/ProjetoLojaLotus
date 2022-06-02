@@ -159,7 +159,6 @@ public class CadastroCliente extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         btnSalvar = new javax.swing.JButton();
         btnApagar = new javax.swing.JButton();
-        btnFechaJanela = new javax.swing.JButton();
         campoRg = new javax.swing.JFormattedTextField();
 
         jLabel3.setText("jLabel3");
@@ -172,11 +171,10 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jLabel23.setText("jLabel23");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("CADASTRO CLIENTE - [LÓTUS CAMISETARIA]");
         setMaximumSize(new java.awt.Dimension(900, 500));
         setMinimumSize(new java.awt.Dimension(900, 500));
-        setUndecorated(true);
 
         jLabel1.setText("Cód Cliente:");
 
@@ -295,13 +293,6 @@ public class CadastroCliente extends javax.swing.JFrame {
             }
         });
 
-        btnFechaJanela.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar.png"))); // NOI18N
-        btnFechaJanela.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFechaJanelaActionPerformed(evt);
-            }
-        });
-
         try {
             campoRg.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
         } catch (java.text.ParseException ex) {
@@ -402,17 +393,11 @@ public class CadastroCliente extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(campoDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap())))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnFechaJanela, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnFechaJanela)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addContainerGap(59, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(campoCodCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -492,11 +477,6 @@ public class CadastroCliente extends javax.swing.JFrame {
        this.dispose();
     }//GEN-LAST:event_btnApagarActionPerformed
 
-    private void btnFechaJanelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFechaJanelaActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_btnFechaJanelaActionPerformed
-
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
         // TODO add your handling code here:
        cadastraCliente(novoCliente);
@@ -539,7 +519,6 @@ public class CadastroCliente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApagar;
-    private javax.swing.JButton btnFechaJanela;
     private javax.swing.JButton btnSalvar;
     private javax.swing.JTextField campoBairro;
     private javax.swing.JFormattedTextField campoCelular;
