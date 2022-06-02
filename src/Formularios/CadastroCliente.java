@@ -138,7 +138,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         campoBairro = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         campoCep = new javax.swing.JFormattedTextField();
-        jLabel14 = new javax.swing.JLabel();
+        labelCidade = new javax.swing.JLabel();
         campoCidade = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         campoEstado = new javax.swing.JComboBox<>();
@@ -228,7 +228,7 @@ public class CadastroCliente extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        jLabel14.setText("Cidade:");
+        labelCidade.setText("Cidade:");
 
         jLabel15.setText("Estado:");
 
@@ -340,7 +340,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(campoCep, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel14)
+                                .addComponent(labelCidade)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(campoCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
@@ -429,7 +429,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(campoCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14)
+                    .addComponent(labelCidade)
                     .addComponent(campoCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15)
                     .addComponent(campoEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -545,7 +545,6 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -566,6 +565,7 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel labelCidade;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon(){
