@@ -55,7 +55,7 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="campoCodigo" min="-2" pref="55" max="-2" attributes="0"/>
+                                      <Component id="campoCodigoFornecedor" min="-2" pref="55" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -93,7 +93,7 @@
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campoCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="campoCodigoFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="campoCnpj" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -130,7 +130,7 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;d. Fornecedor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="campoCodigo">
+    <Component class="javax.swing.JTextField" name="campoCodigoFornecedor">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -200,6 +200,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

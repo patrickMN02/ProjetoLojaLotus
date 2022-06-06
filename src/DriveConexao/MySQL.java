@@ -88,6 +88,7 @@ public class MySQL{
     
     }
     public void executarSQL(String sql){
+        
     
         try{
             this.statement = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -115,6 +116,17 @@ public class MySQL{
         }    
         return true;
     }  
+    
+    public static ResultSet carregaTabela(String tipo, String arg) throws SQLException{
+        String argumento = tipo +" "+ "like '"+ arg + "%'";
+        
+        MySQL conecta = new MySQL();        
+        PreparedStatement pmst = conecta.getConn().prepareStatement(
+                "SELECT id, nomeCliente, cpf FROM CadastroCliente WHERE "+ argumento + "");
+        ResultSet rs = pmst.executeQuery();
+        return rs;
+    
+    }
     
     
 }

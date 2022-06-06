@@ -34,7 +34,6 @@ public class Venda extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -47,8 +46,6 @@ public class Venda extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jTextField15 = new javax.swing.JTextField();
@@ -76,168 +73,50 @@ public class Venda extends javax.swing.JFrame {
 
         jLabel6.setText("Vendedor:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(6, 12, 56, 16);
+        jLabel6.setBounds(6, 12, 70, 14);
         getContentPane().add(jTextField8);
-        jTextField8.setBounds(80, 6, 50, 28);
-
-        jLabel7.setText("(nome do vendedor aqui)");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(136, 12, 142, 16);
+        jTextField8.setBounds(80, 10, 70, 30);
 
         jLabel1.setText("Venda Nº:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(296, 12, 54, 16);
+        jLabel1.setBounds(285, 12, 60, 14);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(356, 6, 123, 28);
+        jTextField1.setBounds(356, 6, 123, 30);
 
         jLabel2.setText("Data Emissão:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(505, 12, 82, 16);
-
-        jTextField2.setText("(data completa aqui)");
+        jLabel2.setBounds(500, 10, 90, 14);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(593, 6, 125, 28);
+        jTextField2.setBounds(593, 6, 100, 30);
 
         jLabel3.setText("Hora Emissão:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(724, 12, 83, 16);
-
-        jTextField3.setText("(hora aqui)");
+        jLabel3.setBounds(712, 12, 100, 14);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(813, 6, 99, 28);
+        jTextField3.setBounds(813, 6, 99, 30);
 
         jLabel4.setText("Cód Cliente:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(6, 52, 68, 16);
+        jLabel4.setBounds(6, 52, 70, 14);
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(80, 40, 113, 28);
+        jTextField4.setBounds(80, 50, 130, 30);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/binoculos.png"))); // NOI18N
         jButton1.setText("Localizar Cliente");
         getContentPane().add(jButton1);
-        jButton1.setBounds(199, 40, 151, 28);
-
-        jTextField5.setText("(nome do cliente aqui)");
+        jButton1.setBounds(220, 40, 151, 28);
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(356, 40, 556, 28);
+        jTextField5.setBounds(382, 40, 530, 30);
 
-        jLabel5.setText("Cód Barras:");
+        jLabel5.setText("Produto:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(6, 92, 66, 16);
+        jLabel5.setBounds(6, 92, 70, 14);
         getContentPane().add(jTextField6);
-        jTextField6.setBounds(78, 86, 148, 28);
-
-        jTextField7.setText("(nome do produto aqui)");
-        getContentPane().add(jTextField7);
-        jTextField7.setBounds(371, 86, 541, 28);
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/lupa.png"))); // NOI18N
-        jButton2.setText("Buscar Produto");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(232, 86, 133, 28);
+        jTextField6.setBounds(78, 86, 148, 30);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
                 "Cód Barra", "Descrição", "Quantidade", "Preço de Venda", "Total dos Itens"
@@ -247,36 +126,36 @@ public class Venda extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(0, 141, 912, 147);
+        jScrollPane1.setBounds(0, 130, 912, 147);
         getContentPane().add(jTextField15);
-        jTextField15.setBounds(832, 300, 80, 28);
+        jTextField15.setBounds(810, 290, 80, 30);
 
         jLabel11.setText("Subtotal:");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(693, 306, 48, 16);
+        jLabel11.setBounds(667, 306, 70, 14);
 
         jLabel12.setText("Descontos:");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(672, 337, 63, 16);
+        jLabel12.setBounds(666, 337, 90, 14);
 
         jTextField16.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         jTextField16.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(jTextField16);
         jTextField16.setBounds(747, 371, 165, 61);
         getContentPane().add(jTextField17);
-        jTextField17.setBounds(832, 331, 80, 28);
+        jTextField17.setBounds(810, 330, 80, 30);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(0, 334, 654, 98);
+        jScrollPane2.setBounds(0, 334, 654, 96);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/bloco-de-anotacoes.png"))); // NOI18N
         jLabel8.setText("Observações:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(6, 306, 96, 16);
+        jLabel8.setBounds(6, 306, 87, 16);
 
         jLabel9.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         jLabel9.setText("Total:");
@@ -286,7 +165,7 @@ public class Venda extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/dados-verificados.png"))); // NOI18N
         jButton3.setText("Finalizar Venda");
         getContentPane().add(jButton3);
-        jButton3.setBounds(770, 450, 132, 28);
+        jButton3.setBounds(770, 450, 125, 25);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar.png"))); // NOI18N
         jButton5.setText("Cancelar");
@@ -296,7 +175,7 @@ public class Venda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(30, 450, 134, 28);
+        jButton5.setBounds(30, 450, 134, 25);
 
         pack();
         setLocationRelativeTo(null);
@@ -344,7 +223,6 @@ public class Venda extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -356,7 +234,6 @@ public class Venda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
@@ -372,7 +249,6 @@ public class Venda extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables

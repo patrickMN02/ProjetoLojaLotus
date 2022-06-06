@@ -11,8 +11,7 @@ import javax.swing.JOptionPane;
 public class CadastroCliente extends javax.swing.JFrame {
 
     
-    MySQL conecta = new MySQL();
-    
+    MySQL conecta = new MySQL();    
     Cliente novoCliente = new Cliente();
     
     public CadastroCliente() {
@@ -35,7 +34,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         novoCliente.setBairro((campoBairro.getText()));
         novoCliente.setCep((campoCep.getText()));
         novoCliente.setCidade((campoCidade.getText()));
-        novoCliente.setEstado((campoEstado.getSelectedItem()));
+        novoCliente.setEstado((String)(campoEstado.getSelectedItem()));
         novoCliente.setPais((campoPais.getText()));
         novoCliente.setEmailPessoal((campoEmailPessoal.getText()));
         novoCliente.setEmailComercial((campoEmailComercial.getText()));
@@ -50,7 +49,6 @@ public class CadastroCliente extends javax.swing.JFrame {
                     + "cpf,"
                     + "rg,"
                     + "datanasc,"
-                    + "dataCadastro,"
                     + "dataCadastro,"
                     + "nomeCliente,"
                     + "endereco,"
@@ -67,14 +65,14 @@ public class CadastroCliente extends javax.swing.JFrame {
                     + "telResidencial,"
                     + "telComercial,"
                     + "observacoes"
-                + " ) VALUES("
+                + " ) VALUES ("
                     + "'" + novoCliente.getId() + "'," 
                     + "'" + novoCliente.getCpf() + "'," 
                     + "'" + novoCliente.getRg() + "'," 
                     + "'" + novoCliente.getDatanasc() + "'," 
                     + "'" + novoCliente.getDataCadastro() + "'," 
                     + "'" + novoCliente.getNomeCliente() + "'," 
-                    //+ "'" + novoCliente.getEndereco() + "'," 
+                    + "'" + novoCliente.getEndereco() + "'," 
                     + "'" + novoCliente.getNumero() + "'," 
                     + "'" + novoCliente.getComplemento()+ "'," 
                     + "'" + novoCliente.getBairro() + "'," 
@@ -99,7 +97,40 @@ public class CadastroCliente extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso");
             
                    
-        }
+        }  
+        
+    
+    }
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    private void limpaCampos(){
+        campoCodCliente.setText("");
+        campoCpf.setText("");
+        campoRg.setText("");
+        campoNasc.setText("");
+        campoDataCadastro.setText("");
+        campoNomeCliente.setText("");
+        campoEndereco.setText("");
+        campoNum.setText("");
+        campoComplemento.setText("");
+        campoBairro.setText("");
+        campoCep.setText("");
+        campoCidade.setText("");
+        campoPais.setText("");
+        campoEmailPessoal.setText("");
+        campoEmailComercial.setText("");
+        campoCelular.setText("");
+        campoTelResidencial.setText("");
+        campoTelComercial.setText("");
+        campoObservacoes.setText("");   
     
     }
 
@@ -138,7 +169,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         campoBairro = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         campoCep = new javax.swing.JFormattedTextField();
-        labelCidade = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         campoCidade = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         campoEstado = new javax.swing.JComboBox<>();
@@ -171,7 +202,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jLabel23.setText("jLabel23");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CADASTRO CLIENTE - [LÓTUS CAMISETARIA]");
         setMaximumSize(new java.awt.Dimension(900, 500));
         setMinimumSize(new java.awt.Dimension(900, 500));
@@ -228,7 +259,7 @@ public class CadastroCliente extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        labelCidade.setText("Cidade:");
+        jLabel14.setText("Cidade:");
 
         jLabel15.setText("Estado:");
 
@@ -240,8 +271,6 @@ public class CadastroCliente extends javax.swing.JFrame {
         });
 
         jLabel16.setText("País:");
-
-        campoPais.setText("Brasil");
 
         jLabel17.setText("Email Pessoal:");
 
@@ -340,7 +369,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(campoCep, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(labelCidade)
+                                .addComponent(jLabel14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(campoCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
@@ -397,7 +426,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(59, Short.MAX_VALUE)
+                .addContainerGap(51, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(campoCodCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -429,7 +458,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(campoCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelCidade)
+                    .addComponent(jLabel14)
                     .addComponent(campoCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15)
                     .addComponent(campoEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -475,6 +504,7 @@ public class CadastroCliente extends javax.swing.JFrame {
     private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
        //BOTÃO DESCARTAR INFORMAÇÕES
        this.dispose();
+       //limpaCampos();
     }//GEN-LAST:event_btnApagarActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
@@ -545,6 +575,7 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -565,7 +596,6 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel labelCidade;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon(){
